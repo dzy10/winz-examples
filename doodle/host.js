@@ -48,11 +48,7 @@ function startGame() {
         totalRounds = settings['rounds'];
     if (settings['time'])
         timeLimit = settings['time'];
-    // bar = document.getElementById('progBar');
-    // bar.setAttribute('aria-valuemax', timeLimit);
-    // bar.setAttribute('aria-valuenow', 0);
-    // bar.style.width = '0%';
-
+    
     current = playerList[Math.floor(numPlayers * Math.random())];
     getWord();
     parent.send(current, ["you", word]);
